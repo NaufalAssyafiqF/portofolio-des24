@@ -19,7 +19,7 @@ const Navbar = () => {
     { icon: <Phone size={25} weight="bold" />, text: "Contact" },
   ];
   return (
-    <div className="flex justify-between w-full absolute top-0 left-0 h-14 mt-3 px-4 sm:px-8">
+    <div className="flex justify-between w-[90%] absolute top-0 left-1/2 transform -translate-x-1/2 h-14 mt-3 ">
       {/* Bagian Kiri (Logo dan Profil) */}
       <div className="flex justify-center items-center space-x-2">
         <Image

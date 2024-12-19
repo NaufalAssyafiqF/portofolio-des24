@@ -1,7 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import WelcomeText from "./WelcomeText";
 
+import "./HeroSection.css";
 
 const HeroSection = () => {
   return (
@@ -21,15 +23,16 @@ const HeroSection = () => {
           <button className="absolute sm:top-10 sm:right-10 border border-black px-4 py-2 rounded-full bg-white shadow-2xl animate-[bounce_1.7s_ease-in-out_infinite] top-0 right-8">
             Web developer
           </button>
-          <button className="absolute sm:top-1/2 sm:left-10 top-2/3 left-5 border border-black px-4 py-2 rounded-full bg-white shadow-2xl animate-[bounce_1.5s_ease-in-out_infinite]">
+          <button className="absolute sm:top-1/2 sm:left-7 top-2/3 left-5 border border-black px-4 py-2 rounded-full bg-white shadow-2xl animate-[bounce_1.5s_ease-in-out_infinite]">
             Mobile developer
           </button>
           <button className="absolute sm:bottom-10 sm:right-32 bottom-0 right-12 border border-black px-4 py-2 rounded-full bg-white shadow-2xl animate-[bounce_1.3s_ease-in-out_infinite]">
             3D Artist
           </button>
         </div>
+        <WelcomeText/>
       </div>
-      <Navbar/>
+      <Navbar />
     </div>
   );
 };
