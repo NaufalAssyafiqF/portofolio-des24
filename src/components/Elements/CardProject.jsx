@@ -2,12 +2,12 @@ import { ArrowRight, CalendarDots } from '@phosphor-icons/react/dist/ssr';
 import Image from 'next/image'
 import React from 'react'
 
-const CardProject = () => {
+const CardProject = ({ project, index }) => {
   return (
-    <div className="w-80 h-96 rounded-2xl shadow-xl border-2 border-gray-300 overflow-hidden group hover:scale-105 transition-all duration-500 cursor-pointer">
+    <div className="min-w-80 max-w-96 min-h-96 max-h-[400px] rounded-2xl shadow-xl border-2 border-gray-300 overflow-hidden group hover:scale-105 transition-all duration-500 cursor-pointer">
       <div className="border-b-2 border-gray-300 relative overflow-hidden">
         <Image
-          src="/images/syafiq-webukm.png"
+          src={project.image}
           width={300}
           height={300}
           alt="syafiq-webukm"

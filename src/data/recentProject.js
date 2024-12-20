@@ -13,7 +13,7 @@ const recentProject = [
         ],
       },
       {
-        image: "/images/syafiq-webukm.png",
+        image: "/images/website-sukaanime.jpg",
         title: "Website UKM",
         description:
           "website ecommerce untuk menghubungkan para pelaku umkm dengan pembeli",
@@ -26,7 +26,7 @@ const recentProject = [
         ],
       },
       {
-        image: "/images/syafiq-webukm.png",
+        image: "/images/plantopia.jpg",
         title: "Website UKM",
         description:
           "website ecommerce untuk menghubungkan para pelaku umkm dengan pembeli",
