@@ -1,10 +1,14 @@
-import React from 'react'
-import { Rocket, ArrowRight, ArrowUpRight } from '@phosphor-icons/react/dist/ssr';
-import CardProject from '../Elements/CardProject';
-import recentProject from '@/data/recentProject';
+import React from "react";
+import {
+  Rocket,
+  ArrowRight,
+  ArrowUpRight,
+} from "@phosphor-icons/react/dist/ssr";
+import CardProject from "../Elements/CardProject";
+import recentProject from "@/data/recentProject";
+import Link from "next/link";
 
 const RecentProject = () => {
-    
   return (
     <div className="w-full mt-20 mb-40">
       <div className="w-[90%] mx-auto flex justify-between">
@@ -24,12 +28,15 @@ const RecentProject = () => {
           <CardProject key={index} project={project} />
         ))}
       </div>
-      <div className="flex items-center text-gray-500 space-x-2 max-w-[40%]  underline underline-offset-2 mx-auto mt-8 sm:hidden">
-        <p className="font-medium text-lg ">View more</p>
-        <ArrowRight size={25} weight="bold" />
-      </div>
+      {/* View more */}
+      <Link href="/project">
+        <div className="flex items-center text-gray-500 space-x-2 max-w-[40%]  underline underline-offset-2 mx-auto mt-8 sm:hidden">
+          <p className="font-medium text-lg ">View more</p>
+          <ArrowRight size={25} weight="bold" />
+        </div>
+      </Link>
     </div>
   );
-}
+};
 
-export default RecentProject
+export default RecentProject;
