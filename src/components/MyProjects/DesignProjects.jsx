@@ -1,9 +1,10 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const DesignProjects = () => {
   return (
-    <div className='w-full mt-20'>
+    <div className="w-full mt-20">
       <div className="w-[90%] mx-auto flex items-center space-x-2 mt-4">
         <div className="mx-auto border-b-4 border-gray-400 px-4 py-3  flex items-center space-x-2">
           <Image
@@ -15,37 +16,64 @@ const DesignProjects = () => {
           <p className="font-medium text-lg ">3D Design Projects</p>
         </div>
       </div>
-      <div className="w-[90%] mx-auto grid grid-cols-4 grid-rows-8 gap-4">
-        <div className="row-span-4">
-          <Image src="/images/design/hut-ri.png" width={300} height={300} alt="hut-ri" className='w-full h-full '/>
-        </div>
-        <div className="row-span-3">
-            <Image src="/images/design/toko-jepang.png" width={300} height={300} alt="toko-jepang" className='w-full h-full '/>
-        </div>
-        <div className="col-span-2 row-span-4">
-            <Image src="/images/design/masjid.png" width={300} height={300} alt="masjid" className='w-full h-full '/>
-        </div>
-        <div className="row-span-3 col-start-2 row-start-4">
-            <Image src="/images/design/uhamka.png" width={300} height={300} alt="uhamka" className='w-full h-full '/>
-        </div>
-        <div className="row-span-2 row-start-5">
-            <Image src="/images/design/bed-room.png" width={300} height={300} alt="bed-room" className='w-full h-full '/>
-        </div>
-        <div className="row-span-4 col-start-3 row-start-5">
-            <Image src="/images/design/cute-character.png" width={300} height={300} alt="cute-character" className='w-full h-full '/>
-        </div>
-        <div className="row-span-4 col-start-4 row-start-5">
-            <Image src="/images/design/liblary.png" width={300} height={300} alt="liblary" className='w-full h-full '/>
-        </div>
-        <div className="row-span-2 row-start-7">
-            <Image src="/images/design/game.png" width={300} height={300} alt="game" className='w-full h-full '/>
-        </div>
-        <div className="row-span-2 row-start-7">
-            <Image src="/images/design/beach.png" width={300} height={300} alt="beach" className='w-full h-full '/>
-        </div>
+      <div className="w-[90%] mx-auto grid sm:grid-cols-4 sm:grid-rows-8 gap-4 mt-8 grid-cols-2 grid-rows-5">
+        <div
+          className="sm:row-span-4 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/hut-ri.png)" }}
+        ></div>
+        <div
+          className="sm:row-span-3 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/toko-jepang.png)" }}
+        ></div>
+        <div
+          className="sm:col-span-2 sm:row-span-4 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/abstract-room.png)" }}
+        ></div>
+        <div
+          className="sm:row-span-3 sm:col-start-2 sm:row-start-4 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/uhamka.png)" }}
+        ></div>
+        <div
+          className="sm:row-span-2 sm:row-start-5 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/bed-room.png)" }}
+        ></div>
+        <div
+          className="sm:row-span-4 sm:col-start-3 sm:row-start-5 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/cute-character.png)" }}
+        ></div>
+        <div
+          className="sm:row-span-2 sm:col-start-4 sm:row-start-5 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/liblary.png)" }}
+        ></div>
+        <div
+          className="sm:row-span-2 sm:col-start-4 sm:row-start-7 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/masjid.png)" }}
+        ></div>
+        <div
+          className="sm:row-span-2 sm:row-start-7 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/game.png)" }}
+        ></div>
+        <div
+          className="sm:row-span-2 sm:row-start-7 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
+          style={{ backgroundImage: "url(images/design/beach.png)" }}
+        ></div>
       </div>
+      <Link href={"https://www.instagram.com/hback.art"}>
+        <div className="w-[90%] mx-auto mt-8 cursor-pointer">
+          <Image
+            src="/icons/instagram.png"
+            width={30}
+            height={30}
+            alt="instagram-icon"
+            className="mx-auto mb-2"
+          />
+          <h1 className="font-normal text-lg text-center text-gray-500">
+            Visit my instagram for more design
+          </h1>
+        </div>
+      </Link>
     </div>
   );
-}
+};
 
-export default DesignProjects
+export default DesignProjects;
