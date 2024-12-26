@@ -3,7 +3,6 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import WelcomeText from "./WelcomeText";
 
-import "./HeroSection.css";
 
 const HeroSection = () => {
   return (
