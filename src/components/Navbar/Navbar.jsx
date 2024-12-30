@@ -51,7 +51,7 @@ const Navbar = () => {
       {/* navbar mobile */}
       <div className="sm:hidden relative">
         <nav
-          className={`flex flex-col justify-center items-center bg-white rounded-full p-4 transition-all duration-500 ease-in-out ${
+          className={`flex flex-col justify-center items-center bg-white rounded-full p-4 transition-all duration-500 ease-in-out shadow-md ${
             isOpen ? "max-h-60" : "max-h-14"
           } overflow-hidden`}
         >
@@ -104,10 +104,3 @@ const Navbar = () => {
 
 export default Navbar;
 
-{
-  /* <ul
-          className={`absolute top-14 right-0 bg-white shadow-lg rounded-lg py-4 px-6 space-y-4 transform ${
-            isMenuOpen ? "scale-100 opacity-100" : "scale-0 opacity-0"
-          } transition-all duration-300 ease-in-out sm:static sm:flex sm:space-y-0 sm:space-x-5 sm:bg-transparent sm:shadow-none sm:transform-none`}
-        > */
-}
