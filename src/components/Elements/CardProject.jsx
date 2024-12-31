@@ -35,7 +35,7 @@ const CardProject = ({ project, index }) => {
         <div className="flex space-x-2">
           <div>
             <Image
-              src="/images/nextjslogo.png"
+              src="/icons/nextjslogo.png"
               width={30}
               height={30}
               alt="nextjslogo"
@@ -43,7 +43,7 @@ const CardProject = ({ project, index }) => {
           </div>
           <div>
             <Image
-              src="/images/tailwindlogo.png"
+              src="/icons/tailwindlogo.png"
               width={30}
               height={30}
               alt="tailwindlogo"
@@ -51,7 +51,7 @@ const CardProject = ({ project, index }) => {
           </div>
           <div>
             <Image
-              src="/images/reactlogo.png"
+              src="/icons/reactlogo.png"
               width={30}
               height={30}
               alt="reactlogo"
