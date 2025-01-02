@@ -21,3 +21,11 @@
     rgba(0,0,0,0)
   )
 }
+
+.iconRight {
+  @apply -translate-y-1/2 top-0 md:right-0 transform -translate-x-2 sm:-translate-x-2 md:translate-x-6
+}
+
+.iconLeft {
+  @apply -translate-y-1/2 top-0 md:left-0 transform -translate-x-2 sm:-translate-x-2 md:-translate-x-6  
+}
