@@ -72,9 +72,9 @@ const webAppProject = [
     date: "Juni 2024",
     link: "https://naufalassyafiq-sukaanime.vercel.app/",
     techlogo: [
-      "/images/nextjslogo.png",
-      "/images/tailwindlogo.png",
-      "/images/reactlogo.png",
+      "/icons/nextjslogo.png",
+      "/icons/tailwindlogo.png",
+      "/icons/reactlogo.png",
     ],
   },
 ];

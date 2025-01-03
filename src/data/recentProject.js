@@ -14,7 +14,7 @@ const recentProject = [
   },
   {
     image: "/images/projects/lafzi.png",
-    title: "Aplikasi E-quran LAFZI",
+    title: "Aplikasi LAFZI",
     description: "Aplikasi mobile untuk belajar cara membaca al-quran pelafalan makharijul huruf",
     date: "October 2024",
     link: "https://youtu.be/31UxOeNLvgw?si=siPSUJGkasnnZSlh",
