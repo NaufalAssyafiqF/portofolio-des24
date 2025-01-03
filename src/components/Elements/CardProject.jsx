@@ -1,10 +1,11 @@
-import { ArrowRight, CalendarDots } from '@phosphor-icons/react/dist/ssr';
-import Image from 'next/image'
-import React from 'react'
+import { ArrowRight, CalendarDots } from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 const CardProject = ({ project, index }) => {
   return (
-    <div className="min-w-80 max-w-96 min-h-96 max-h-[400px] rounded-2xl shadow-xl border-2 border-gray-300 overflow-hidden group hover:scale-105 transition-all duration-500 cursor-pointer">
+    <Link href={project.link} className="w-[380px] min-h-96 max-h-[400px] rounded-2xl shadow-xl border-2 border-gray-300 overflow-hidden group hover:scale-105 transition-all duration-500 cursor-pointer">
       <div className="border-b-2 border-gray-300 relative overflow-hidden">
         <Image
           src={project.image}
@@ -23,44 +24,30 @@ const CardProject = ({ project, index }) => {
 
       <div className="p-4 flex flex-col space-y-2 ">
         <h3 className="text-xl font-semibold group-hover:underline">
-          Website UKM
+          {project.title}
         </h3>
         <p className="text-xs font-normal text-gray-500 ">
-          website ecommerce untuk menghubungkan para pelaku umkm dengan pembeli
+          {project.description}
         </p>
         <div className="flex items-center space-x-2">
           <CalendarDots size={25} className="text-gray-500" />
-          <p className="text-sm font-medium text-gray-500">Juni 2024</p>
+          <p className="text-sm font-medium text-gray-500">{project.date}</p>
         </div>
         <div className="flex space-x-2">
-          <div>
-            <Image
-              src="/icons/nextjslogo.png"
-              width={30}
-              height={30}
-              alt="nextjslogo"
-            />
-          </div>
-          <div>
-            <Image
-              src="/icons/tailwindlogo.png"
-              width={30}
-              height={30}
-              alt="tailwindlogo"
-            />
-          </div>
-          <div>
-            <Image
-              src="/icons/reactlogo.png"
-              width={30}
-              height={30}
-              alt="reactlogo"
-            />
-          </div>
+          {project.techlogo.map((logo, index) => (
+            <div key={index}>
+              <Image
+                src={logo}
+                width={30}
+                height={30}
+                alt="nextjslogo"
+              />
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </Link>
   );
-}
+};
 
-export default CardProject
+export default CardProject;

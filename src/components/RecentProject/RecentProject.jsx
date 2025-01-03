@@ -18,10 +18,10 @@ const RecentProject = () => {
             Recent Project
           </h1>
         </div>
-        <div className="sm:flex items-center space-x-2 text-gray-500 cursor-pointer hidden">
+        <Link href="/project" className="sm:flex items-center space-x-2 text-gray-500 cursor-pointer hidden">
           <p className="font-medium text-lg">View more</p>
           <ArrowRight size={25} weight="regular" />
-        </div>
+        </Link>
       </div>
       <div className="w-[90%] mx-auto mt-10 flex lg:justify-between md:justify-center sm:justify-center justify-center flex-wrap gap-y-8 mb-8">
         {recentProject.map((project, index) => (

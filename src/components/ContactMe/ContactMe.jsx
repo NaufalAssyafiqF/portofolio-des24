@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   EnvelopeSimple,
   GithubLogo,
@@ -28,7 +29,10 @@ const ContactMe = () => {
             Find me on social media
           </h3>
           <div className="grid grid-cols-2 gap-4 w-full sm:w-[80%] md:w-[80%] text-white">
-            <div className="flex items-center justify-center px-4 py-3 bg-[#F367D2] rounded-lg cursor-pointer group">
+            <Link
+              href={"https://www.instagram.com/naufalassyafiq_/"}
+              className="flex items-center justify-center px-4 py-3 bg-[#F367D2] rounded-lg cursor-pointer group"
+            >
               <InstagramLogo
                 size={25}
                 weight="regular"
@@ -37,8 +41,11 @@ const ContactMe = () => {
               <p className="group-hover:scale-105 transition-all duration-500">
                 Instagram
               </p>
-            </div>
-            <div className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#4B49C9] group">
+            </Link>
+            <Link
+              href={"https://www.linkedin.com/in/naufal-assyafiq/"}
+              className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#4B49C9] group"
+            >
               <LinkedinLogo
                 size={25}
                 weight="regular"
@@ -47,8 +54,13 @@ const ContactMe = () => {
               <p className="group-hover:scale-105 transition-all duration-500">
                 Linkedin
               </p>
-            </div>
-            <div className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#DA3E3E] group">
+            </Link>
+            <Link
+              href={
+                "https://mail.google.com/mail/?view=cm&to=assyafiqnaufal625@gmail.com"
+              }
+              className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#DA3E3E] group"
+            >
               <EnvelopeSimple
                 size={25}
                 weight="regular"
@@ -57,8 +69,11 @@ const ContactMe = () => {
               <p className="group-hover:scale-105 transition-all duration-500">
                 Gmail
               </p>
-            </div>
-            <div className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#333] group">
+            </Link>
+            <Link
+              href={"https://github.com/NaufalAssyafiqF"}
+              className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#333] group"
+            >
               <GithubLogo
                 size={25}
                 weight="regular"
@@ -67,8 +82,8 @@ const ContactMe = () => {
               <p className="group-hover:scale-105 transition-all duration-500">
                 Github
               </p>
-            </div>
-            <div className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#25D366] col-span-2 group">
+            </Link>
+            <Link href={"https://wa.me/6282114830733"} className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#25D366] col-span-2 group">
               <WhatsappLogo
                 size={25}
                 weight="regular"
@@ -77,7 +92,7 @@ const ContactMe = () => {
               <p className="group-hover:scale-105 transition-all duration-500">
                 Whatsapp
               </p>
-            </div>
+            </Link>
           </div>
         </div>
         <div className="w-[15%]"></div>
