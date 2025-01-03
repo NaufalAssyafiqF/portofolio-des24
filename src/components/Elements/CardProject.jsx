@@ -40,7 +40,7 @@ const CardProject = ({ project, index }) => {
                 src={logo}
                 width={30}
                 height={30}
-                alt="nextjslogo"
+                alt="tech-logo"
               />
             </div>
           ))}

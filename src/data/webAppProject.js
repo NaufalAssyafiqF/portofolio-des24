@@ -33,7 +33,7 @@ const webAppProject = [
     date: "April 2024",
     link: "https://naufalassyafiq-divexplorers.vercel.app/",
     techlogo: [
-      "/icons/vite.png",
+      "/icons/vite-icon.png",
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
@@ -46,7 +46,7 @@ const webAppProject = [
     date: "March 2024",
     link: "https://naufalassyafiq-plantopia.vercel.app/",
     techlogo: [
-      "/icons/vite.png",
+      "/icons/vite-icon.png",
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
@@ -59,7 +59,7 @@ const webAppProject = [
     date: "February 2024",
     link: "https://naufalassyafiq-sushi-kushuka.vercel.app/",
     techlogo: [
-      "/icons/vite.png",
+      "/icons/vite-icon.png",
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
