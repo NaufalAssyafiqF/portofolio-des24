@@ -9,6 +9,7 @@ import {
   List,
 } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,12 @@ const Navbar = () => {
     },
   ];
   return (
-    <div className="flex justify-between w-[90%] absolute top-0 left-1/2 transform -translate-x-1/2 h-14 mt-3 ">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 0.4 }}
+      className="flex justify-between w-[90%] absolute top-0 left-1/2 transform -translate-x-1/2 h-14 mt-3 "
+    >
       {/* Bagian Kiri (Logo dan Profil) */}
       <div className="flex justify-center items-center space-x-2">
         <Image
@@ -98,9 +104,8 @@ const Navbar = () => {
           ))}
         </ul>
       </nav>
-    </div>
+    </motion.div>
   );
 };
 
 export default Navbar;
-

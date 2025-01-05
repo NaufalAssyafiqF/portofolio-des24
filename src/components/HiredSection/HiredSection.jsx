@@ -1,11 +1,18 @@
+"use client";
 import React from "react";
 import { PaperPlaneRight } from "@phosphor-icons/react/dist/ssr";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 const HiredSection = () => {
   return (
-    <div className="w-full mt-20 mb-40">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.5 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
+      className="w-full mt-20 mb-40"
+    >
       <div className="w-[90%] mx-auto flex md:justify-between items-center rounded-xl shadow-xl p-8 bg-[#f9f9f9] flex-col md:flex-row justify-center">
         <div className="md:w-[60%] w-full md:text-left text-center">
           <h1 className="font-bold text-4xl">I'M READY TO BE HIRED</h1>
@@ -37,7 +44,7 @@ const HiredSection = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

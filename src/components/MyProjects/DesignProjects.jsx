@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from "motion/react";
+import { slideUp } from "@/utility/animation";
 
 const DesignProjects = () => {
   return (
@@ -16,7 +19,12 @@ const DesignProjects = () => {
           <p className="font-medium text-lg ">3D Design Projects</p>
         </div>
       </div>
-      <div className="w-[90%] mx-auto grid sm:grid-cols-4 sm:grid-rows-8 gap-4 mt-8 grid-cols-2 grid-rows-5">
+      <motion.div
+        variants={slideUp(0.3)}
+        initial="hidden"
+        whileInView={"visible"}
+        className="w-[90%] mx-auto grid sm:grid-cols-4 sm:grid-rows-8 gap-4 mt-8 grid-cols-2 grid-rows-5"
+      >
         <div
           className="sm:row-span-4 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
           style={{ backgroundImage: "url(images/design/hut-ri.png)" }}
@@ -57,7 +65,7 @@ const DesignProjects = () => {
           className="sm:row-span-2 sm:row-start-7 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
           style={{ backgroundImage: "url(images/design/beach.png)" }}
         ></div>
-      </div>
+      </motion.div>
       <Link href={"https://www.instagram.com/hback.art"}>
         <div className="w-[90%] mx-auto mt-8 cursor-pointer">
           <Image

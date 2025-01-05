@@ -1,3 +1,5 @@
+import { delay } from "framer-motion";
+
 const webAppProject = [
   {
     image: "/images/projects/syafiq-webukm.png",
@@ -11,6 +13,7 @@ const webAppProject = [
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
+    delay: 0.3
   },
   {
     image: "/images/projects/lafzi.png",
@@ -24,6 +27,7 @@ const webAppProject = [
       "/icons/flask1.png",
       "/icons/googlecloud.png",
     ],
+    delay: 0.4
   },
   {
     image: "/images/projects/divexplorer.jpg",
@@ -37,6 +41,7 @@ const webAppProject = [
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
+    delay: 0.5
   },
   {
     image: "/images/projects/plantopia.jpg",
@@ -50,6 +55,7 @@ const webAppProject = [
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
+    delay: 0.6
   },
   {
     image: "/images/projects/sushikushuka.jpg",
@@ -63,6 +69,7 @@ const webAppProject = [
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
+    delay: 0.7
   },
   {
     image: "/images/projects/sukaanime.jpg",
@@ -76,6 +83,7 @@ const webAppProject = [
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
+    delay: 0.8
   },
 ];
 

@@ -1,3 +1,4 @@
+
 const recentProject = [
   {
     image: "/images/projects/syafiq-webukm.png",
@@ -11,6 +12,7 @@ const recentProject = [
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
+    delay: 0.3
   },
   {
     image: "/images/projects/lafzi.png",
@@ -23,6 +25,7 @@ const recentProject = [
       "/icons/flask1.png",
       "/icons/googlecloud.png",
     ],
+    delay: 0.5
   },
   {
     image: "/images/projects/divexplorer.jpg",
@@ -36,6 +39,7 @@ const recentProject = [
       "/icons/tailwindlogo.png",
       "/icons/reactlogo.png",
     ],
+    delay: 0.7
   },
 ];
 
