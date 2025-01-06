@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import {
   EnvelopeSimple,
@@ -8,22 +9,43 @@ import {
   WhatsappLogo,
 } from "@phosphor-icons/react/dist/ssr";
 import React from "react";
+import { motion } from "motion/react";
 
 const ContactMe = () => {
   return (
     <div className="w-[90%] mx-auto mt-20 mb-20">
-      <div className="flex items-center space-x-2 mb-4">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="flex items-center space-x-2 mb-4"
+      >
         <Phone size={45} weight="bold" />
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl">
           Contact Me
         </h1>
-      </div>
-      <p className="font-medium sm:text-xl text-lg w-full sm:w-[70%] text-[#474747] mb-4">
+      </motion.div>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="font-medium sm:text-xl text-lg w-full sm:w-[70%] text-[#474747] mb-4"
+      >
         Feel free to contact me, I will reply as soon as possible and let's
         discuss how we can work together.
-      </p>
-      <hr className="w-full mx-auto border-b-4  border-gray-400 " />
-      <div className="flex flex-col md:flex-row sm:flex-col mt-8">
+      </motion.p>
+      <motion.hr
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        className="w-full mx-auto border-b-4  border-gray-400 "
+      />
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ type: "spring", stiffness: 100, delay: 0.6 }}
+        className="flex flex-col md:flex-row sm:flex-col mt-8"
+      >
         <div className="w-full md:w-2/3 sm:w-[80%]">
           <h3 className="font-medium sm:text-xl text-lg mb-4">
             Find me on social media
@@ -83,7 +105,10 @@ const ContactMe = () => {
                 Github
               </p>
             </Link>
-            <Link href={"https://wa.me/6282114830733"} className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#25D366] col-span-2 group">
+            <Link
+              href={"https://wa.me/6282114830733"}
+              className="flex items-center justify-center px-4 py-3 rounded-lg cursor-pointer bg-[#25D366] col-span-2 group"
+            >
               <WhatsappLogo
                 size={25}
                 weight="regular"
@@ -124,7 +149,7 @@ const ContactMe = () => {
             </form>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

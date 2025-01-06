@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 
 const MySkill = () => {
   return (
-    <div className="mt-20 mb-40">
+    <div  className="mt-20 mb-40">
       <div className="w-[90%] mx-auto flex items-center space-x-2">
         <DesktopTower size={45} weight="bold" />
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl">

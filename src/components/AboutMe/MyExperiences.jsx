@@ -20,6 +20,7 @@ const MyExperiences = () => {
               title="Computer Science Bachelor Degree"
               place="Universitas Muhammadiyah Prof Dr HAMKA"
               date="2020 - 2024"
+              delay={0.3}
             />
             <IconExperience icon="education" iconStyle="iconLeft" />
           </div>
@@ -29,6 +30,7 @@ const MyExperiences = () => {
               title="Cloud Computing Cohort"
               place="Bangkit 2023 Program MSIB"
               date="Feb 2023 - Jun 2023"
+              delay={0.5}
             />
           </div>
           <div className=" flex flex-row-reverse sm:flex-row-reverse md:flex-row items-center">
@@ -36,6 +38,7 @@ const MyExperiences = () => {
               title="Web Developer Internship"
               place="PT Goritmix Solusi Teknologi"
               date="May 2024 - Jun 2024"
+              delay={0.7}
             />
             <IconExperience icon="work" iconStyle="iconLeft" />
           </div>
