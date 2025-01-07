@@ -23,7 +23,7 @@ const RecentProject = () => {
           <ArrowRight size={25} weight="regular" />
         </Link>
       </div>
-      <div className="w-[90%] mx-auto mt-10 flex lg:justify-between md:justify-center sm:justify-center justify-center flex-wrap gap-y-8 mb-8">
+      <div className="w-[90%] mx-auto mt-10 flex lg:justify-between md:justify-center sm:justify-center justify-center flex-wrap gap-y-8 lg:gap-x-2 md:gap-x-8 sm:gap-x-8 gap-x-8 mb-8">
         {recentProject.map((project, index) => (
           <CardProject key={index} project={project} />
         ))}

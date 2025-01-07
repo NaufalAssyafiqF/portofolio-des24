@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import { Poppins } from "next/font/google";
+import Loading from "./loading";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -15,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={poppins.className} fallback={<Loading />}>
         {children}
         <Footer/>
       </body>
