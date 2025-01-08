@@ -5,7 +5,7 @@ import DesignProjects from "@/components/MyProjects/DesignProjects";
 
 const page = () => {
   return (
-    <div className="w-full mt-48 mb-40">
+    <div className="w-full mt-48 mb-40 overflow-hidden">
       <Navbar />
       <MyWebAppProjects />
       <DesignProjects />

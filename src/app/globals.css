@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 
+
 .myGradient {
   mask-image: linear-gradient(
     to right,
