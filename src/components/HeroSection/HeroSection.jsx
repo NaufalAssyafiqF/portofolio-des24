@@ -17,7 +17,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
-          className="relative"
+          className="relative max-w-[1280px]"
         >
           <Image
             src="/images/hero-image.png"

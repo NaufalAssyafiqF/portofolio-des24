@@ -6,14 +6,14 @@ import Marquee from "react-fast-marquee";
 
 const MySkill = () => {
   return (
-    <div  className="mt-20 mb-40">
-      <div className="w-[90%] mx-auto flex items-center space-x-2">
+    <div className="mt-20 mb-40">
+      <div className="w-[90%] max-w-[1280px] mx-auto flex items-center space-x-2">
         <DesktopTower size={45} weight="bold" />
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl">
           My Skills
         </h1>
       </div>
-      <div className="w-[90%] mx-auto overflow-hidden myGradient mt-8">
+      <div className="w-[90%] max-w-[1280px] mx-auto overflow-hidden myGradient mt-8">
         <Marquee className="flex justify-between" direction="left">
           {mySkills1.map((item, index) => (
             <img

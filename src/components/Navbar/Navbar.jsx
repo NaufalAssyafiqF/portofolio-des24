@@ -33,7 +33,7 @@ const Navbar = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.4 }}
-      className="flex justify-between w-[90%] absolute top-0 left-1/2 transform -translate-x-1/2 h-14 mt-3 "
+      className="flex justify-between max-w-[1280px] w-[90%] absolute top-0 left-1/2 transform -translate-x-1/2 h-14 mt-3 "
     >
       {/* Bagian Kiri (Logo dan Profil) */}
       <div className="flex justify-center items-center space-x-2">

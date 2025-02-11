@@ -8,7 +8,7 @@ import { slideUp } from "@/utility/animation";
 const DesignProjects = () => {
   return (
     <div className="w-full mt-20">
-      <div className="w-[90%] mx-auto flex items-center space-x-2 mt-4">
+      <div className="w-[90%] max-w-[1280px] mx-auto flex items-center space-x-2 mt-4">
         <div className="mx-auto border-b-4 border-gray-400 px-4 py-3  flex items-center space-x-2">
           <Image
             src="/icons/3d-icon.png"
@@ -23,7 +23,7 @@ const DesignProjects = () => {
         variants={slideUp(0.3)}
         initial="hidden"
         whileInView={"visible"}
-        className="w-[90%] mx-auto grid sm:grid-cols-4 sm:grid-rows-8 gap-4 mt-8 grid-cols-2 grid-rows-5"
+        className="w-[90%] max-w-[1280px] mx-auto grid sm:grid-cols-4 sm:grid-rows-8 gap-4 mt-8 grid-cols-2 grid-rows-5 "
       >
         <div
           className="sm:row-span-4 bg-no-repeat bg-center bg-cover min-h-[200px] rounded-md"
@@ -67,7 +67,7 @@ const DesignProjects = () => {
         ></div>
       </motion.div>
       <Link href={"https://www.instagram.com/hback.art"}>
-        <div className="w-[90%] mx-auto mt-8 cursor-pointer">
+        <div className="w-[90%] max-w-[1280px] mx-auto mt-8 cursor-pointer">
           <Image
             src="/icons/instagram.png"
             width={30}

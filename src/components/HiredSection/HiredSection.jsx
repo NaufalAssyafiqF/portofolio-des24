@@ -13,7 +13,7 @@ const HiredSection = () => {
       transition={{ type: "spring", stiffness: 100, delay: 0.2 }}
       className="w-full mt-20 mb-40"
     >
-      <div className="w-[90%] mx-auto flex md:justify-between items-center rounded-xl shadow-xl p-8 bg-[#f9f9f9] flex-col md:flex-row justify-center">
+      <div className="w-[90%] max-w-[1280px] mx-auto flex md:justify-between items-center rounded-xl shadow-xl p-8 bg-[#f9f9f9] flex-col md:flex-row justify-center">
         <div className="md:w-[60%] w-full md:text-left text-center">
           <h1 className="font-bold text-4xl">I'M READY TO BE HIRED</h1>
           <h3 className="font-semibold text-2xl text-[#474747]">

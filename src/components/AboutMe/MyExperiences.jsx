@@ -6,13 +6,13 @@ import IconExperience from "./IconExperience";
 const MyExperiences = () => {
   return (
     <div className="mt-20">
-      <div className="w-[90%] mx-auto flex items-center space-x-2">
+      <div className="w-[90%] max-w-[1280px] mx-auto flex items-center space-x-2">
         <GraduationCap size={45} weight="bold" />
         <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl">
           My Educations & Experiences
         </h1>
       </div>
-      <div className="w-[90%] mx-auto md:p-6 sm:p-0 p-0 relative mt-8">
+      <div className="w-[90%] max-w-[1280px] mx-auto md:p-6 sm:p-0 p-0 relative mt-8">
         <div className="relative">
           <div className="absolute top-0 left-3 sm:top-0 sm:left-3 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-gray-300"></div>
           <div className=" flex flex-row-reverse sm:flex-row-reverse md:flex-row items-center justify-">

@@ -13,7 +13,7 @@ const CardProject = ({ project, index }) => {
         variants={slideLeft(project.delay)}
         initial="hidden"
         whileInView={"visible"}
-        className="max-w-[380px] min-h-96 max-h-[400px] rounded-2xl shadow-xl border-2 border-gray-300 overflow-hidden group hover:scale-105 transition-all duration-500 cursor-pointer"
+        className="w-full min-h-96 max-h-[400px] rounded-2xl shadow-xl border-2 border-gray-300 overflow-hidden group hover:scale-105 transition-all duration-500 cursor-pointer"
       >
         <div className="border-b-2 border-gray-300 relative overflow-hidden">
           <Image

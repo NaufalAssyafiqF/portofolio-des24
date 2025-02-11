@@ -13,7 +13,7 @@ import { motion } from "motion/react";
 
 const ContactMe = () => {
   return (
-    <div className="w-[90%] mx-auto mt-20 mb-20">
+    <div className="w-[90%] max-w-[1280px] mx-auto mt-20 mb-20">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

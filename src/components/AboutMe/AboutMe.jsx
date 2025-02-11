@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 
 const AboutMe = () => {
   return (
-    <div className="w-[90%] mx-auto flex flex-col space-y-4 mt-20 mb-40">
+    <div className="w-[90%] max-w-[1280px] mx-auto flex flex-col space-y-4 mt-20 mb-40">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}

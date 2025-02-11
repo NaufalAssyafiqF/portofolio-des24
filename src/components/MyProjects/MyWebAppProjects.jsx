@@ -9,7 +9,7 @@ import Image from "next/image";
 const MyWebAppProjects = () => {
   return (
     <div>
-      <div className="w-[90%] mx-auto flex justify-between">
+      <div className="w-[90%] max-w-[1280px] mx-auto flex justify-between">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -22,7 +22,7 @@ const MyWebAppProjects = () => {
           </h1>
         </motion.div>
       </div>
-      <div className="w-[90%] mx-auto flex items-center space-x-2 mt-4">
+      <div className="w-[90%] max-w-[1280px] mx-auto flex items-center space-x-2 mt-4">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -38,7 +38,7 @@ const MyWebAppProjects = () => {
           <p className="font-medium text-lg ">Web/App Projects</p>
         </motion.div>
       </div>
-      <div className="w-[90%] mx-auto mt-10 flex lg:justify-between md:justify-center sm:justify-center justify-center flex-wrap gap-y-8 lg:gap-x-2 md:gap-x-8 sm:gap-x-8 gap-x-8 mb-8">
+      <div className="w-[90%] max-w-[1280px] mx-auto mt-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:justify-between md:justify-center sm:justify-center justify-center flex-wrap gap-y-8 lg:gap-x-2 md:gap-x-8 sm:gap-x-8 gap-x-8 mb-8">
         {webAppProject.map((project, index) => (
           <CardProject key={index} project={project} />
         ))}
