@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer/Footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import Loading from "./loading";
