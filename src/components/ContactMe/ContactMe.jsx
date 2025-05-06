@@ -150,6 +150,7 @@ const ContactMe = () => {
           </div>
         </div>
       </motion.div>
+      <a href="https://www.google.co.id">test untuk cross domain</a>
     </div>
   );
 };
