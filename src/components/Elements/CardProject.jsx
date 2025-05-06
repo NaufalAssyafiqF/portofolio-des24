@@ -8,7 +8,7 @@ import { slideLeft } from "@/utility/animation";
 
 const CardProject = ({ project, index }) => {
   return (
-    <Link href={project.link}>
+    <a href={project.link}>
       <motion.div
         variants={slideLeft(project.delay)}
         initial="hidden"
@@ -51,7 +51,7 @@ const CardProject = ({ project, index }) => {
           </div>
         </div>
       </motion.div>
-    </Link>
+    </a>
   );
 };
 
