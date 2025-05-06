@@ -77,7 +77,7 @@ const webAppProject = [
     description:
       "website penyedia informasi seputar anime dan list anime mulai dari top anime sampai upcoming anime",
     date: "Juni 2024",
-    link: "https://naufalassyafiq-sukaanime.vercel.app/",
+    link: "https://naufalassyafiq-sukaanime.vercel.app",
     techlogo: [
       "/icons/nextjslogo.png",
       "/icons/tailwindlogo.png",
