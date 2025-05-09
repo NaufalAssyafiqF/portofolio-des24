@@ -8,7 +8,7 @@ import { slideLeft } from "@/utility/animation";
 
 const CardProject = ({ project, index }) => {
   return (
-    <a href={project.link}>
+    <a href={project.link} id="card-project">
       <motion.div
         variants={slideLeft(project.delay)}
         initial="hidden"
